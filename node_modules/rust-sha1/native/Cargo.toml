@@ -1,0 +1,17 @@
+[package]
+name = "rust-sha1"
+version = "0.0.1"
+authors = ["alexmorley <alex0morley@gmail.com>"]
+license = "MIT"
+build = "build.rs"
+
+[lib]
+name = "rust_sha1"
+crate-type = ["dylib"]
+
+[build-dependencies]
+neon-build = "0.1.23"
+
+[dependencies]
+neon = "0.1.23"
+rust-crypto = "^0.2"
